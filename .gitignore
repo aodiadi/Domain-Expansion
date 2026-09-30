@@ -1,0 +1,25 @@
+# Decision 5: secrets and key material never enter the repo.
+secrets/
+*.pfx
+*.p12
+*.key
+*.pem
+.env
+*.env
+
+# Terraform (phase 11): state lives outside the repo, and tfvars can hold secrets.
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform/
+
+# Disks and install media.
+*.vhd
+*.vhdx
+*.avhdx
+*.iso
+
+# Editor and OS clutter.
+.vscode/
+Thumbs.db
+desktop.ini
